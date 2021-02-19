@@ -34,8 +34,8 @@
               "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Domain\\Domain.csproj": {
                 "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Domain\\Domain.csproj"
               },
-              "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Persistence\\Persistence.csproj": {
-                "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Persistence\\Persistence.csproj"
+              "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Persistence\\Infrastructure.csproj": {
+                "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Persistence\\Infrastructure.csproj"
               }
             }
           }
@@ -125,12 +125,12 @@
         }
       }
     },
-    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Persistence\\Persistence.csproj": {
+    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Persistence\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Persistence\\Persistence.csproj",
-        "projectName": "Persistence",
-        "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Persistence\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Persistence\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Hector Franz\\.nuget\\packages\\",
         "outputPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
@@ -167,6 +167,22 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

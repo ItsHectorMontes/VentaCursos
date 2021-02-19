@@ -1,0 +1,4 @@
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Persistence\bin\Debug\netcoreapp3.1\Domain.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Persistence\obj\Debug\netcoreapp3.1\Infrastructure.csprojAssemblyReference.cache
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Persistence\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Persistence\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
