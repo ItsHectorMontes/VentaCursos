@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9V04x9y3TqpzZ2ND6P1vRJ0SUrjHhnvvD9shluC0w6ZghVXTU79BshHq9pdAW3ncjgFHpBxIGLqs+UkEfKX8/A==",
+  "dgSpecHash": "lzIFGyMZLuK7Z37U7/w2Q39MS+IKtcOSIREVzOaTh2WuoTDG/yrBMW03LVu5AHJ70cLgJjgkN9Yx8vxLlUaohg==",
   "success": true,
   "projectFilePath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hector Franz\\.nuget\\packages\\mediatr\\8.1.0\\mediatr.8.1.0.nupkg.sha512",
+    "C:\\Users\\Hector Franz\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.1.0\\mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\Hector Franz\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Hector Franz\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\Hector Franz\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
