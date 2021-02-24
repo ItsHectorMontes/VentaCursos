@@ -1,8 +1,10 @@
 ﻿using Domain.Entities;
+using FluentValidation;
 using Infrastructure.Persistence;
 using MediatR;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,7 +17,19 @@ namespace Application.Cursos.Queries
         {            
             public string Titulo { get; set; }
             public string Descripcion { get; set; }
-            public DateTime FechaPublicacion { get; set; }
+            public DateTime? FechaPublicacion { get; set; }
+        }
+        /// <summary>
+        /// validacion using fluent validation
+        /// </summary>
+        public class EjecutaValidacion : AbstractValidator<Ejecuta>
+        {
+            public EjecutaValidacion()
+            {
+                RuleFor(x => x.Titulo).NotEmpty();
+                RuleFor(x => x.Descripcion).NotEmpty();
+                RuleFor(x => x.FechaPublicacion).NotEmpty();
+            }
         }
         public class Manejador : IRequestHandler<Ejecuta>
 

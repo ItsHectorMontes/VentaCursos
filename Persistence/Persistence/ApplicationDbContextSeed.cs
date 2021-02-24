@@ -1,4 +1,6 @@
 ﻿using Domain.Entities;
+using Domain.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +11,7 @@ namespace Infrastructure.Persistence
     /// <summary>
     /// clase para conexion base de datos.
     /// </summary>
-    public class ApplicationDbContextSeed : DbContext
+    public class ApplicationDbContextSeed : IdentityDbContext<Usuario>
     {
         public ApplicationDbContextSeed(DbContextOptions options) : base(options)
         {
@@ -18,6 +20,7 @@ namespace Infrastructure.Persistence
         //override metodo existente heredado desde el padre, pero se puede cambiar la logica adecuandolo a la necesidad actual.
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {//llave compuesta 
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<CursoInstructor>().HasKey(ci => new { ci.InstructorId, ci.CursoId });
         }
         //mapeo de clases
@@ -26,7 +29,7 @@ namespace Infrastructure.Persistence
         public DbSet<CursoInstructor> CursoInstructor { get; set; }
         public DbSet<Instructor> Instructor { get; set; }
         public DbSet<Precio> Precio { get; set; }
-
+        
 
 
     }

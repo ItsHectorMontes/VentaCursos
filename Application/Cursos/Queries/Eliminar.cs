@@ -1,7 +1,9 @@
-﻿using Infrastructure.Persistence;
+﻿using Application.ManejadorError.Exceptions;
+using Infrastructure.Persistence;
 using MediatR;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -26,9 +28,9 @@ namespace Application.Cursos.Queries
             public async Task<Unit> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
                 var curso =  await _contextSeed.Curso.FindAsync(request.Id);
-                if (curso==null)
+                if (curso == null)
                 {
-                    throw new Exception("No se puede eliminar el curso");
+                    throw new ManejadorExcepcion(HttpStatusCode.NotFound, new {curso = "No se encontro el Curso" });
                 }
                 _contextSeed.Remove(curso);
 
