@@ -221,14 +221,14 @@
         }
       }
     },
-    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj": {
+    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Seguridad\\Seguridad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj",
-        "projectName": "WebApi",
-        "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Seguridad\\Seguridad.csproj",
+        "projectName": "Seguridad",
+        "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Seguridad\\Seguridad.csproj",
         "packagesPath": "C:\\Users\\Hector Franz\\.nuget\\packages\\",
-        "outputPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\obj\\",
+        "outputPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Seguridad\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -264,6 +264,83 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj",
+        "projectName": "WebApi",
+        "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\Hector Franz\\.nuget\\packages\\",
+        "outputPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hector Franz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Application\\Application.csproj": {
+                "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Application\\Application.csproj"
+              },
+              "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Seguridad\\Seguridad.csproj": {
+                "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Seguridad\\Seguridad.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

@@ -1,4 +1,5 @@
-﻿using Application.ManejadorError.Exceptions;
+﻿using Application.Interfaces;
+using Application.ManejadorError.Exceptions;
 using Domain.Identity;
 using FluentValidation;
 using MediatR;
@@ -39,11 +40,14 @@ namespace Application.Security
             //declaramos objetos.
             private readonly UserManager<Usuario> _userManager;
             private readonly SignInManager<Usuario> _signInManager;
-            public Manejador(UserManager<Usuario> userManager, SignInManager<Usuario> signInManager)
+            //jwt
+            private readonly IJwtGenerador _jwtGenerador;
+            //parametros que recibe para generar el token.
+            public Manejador(UserManager<Usuario> userManager, SignInManager<Usuario> signInManager, IJwtGenerador jwtGenerador)
             {
                 _userManager = userManager;
                 _signInManager = signInManager;
-
+                _jwtGenerador = jwtGenerador;
             }
             public async Task<UsuarioData> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
@@ -59,7 +63,7 @@ namespace Application.Security
                     return new UsuarioData
                     {
                         NombreCompleto = usuario.NombreCompleto,
-                        Token = "este es el token",
+                        Token = _jwtGenerador.CrearToken(usuario),
                         UserName = usuario.UserName,
                         Email = usuario.Email,
                         Imagen = null

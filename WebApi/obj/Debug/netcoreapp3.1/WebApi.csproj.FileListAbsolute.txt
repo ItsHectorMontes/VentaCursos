@@ -1,3 +1,8 @@
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\WebApi.csprojAssemblyReference.cache
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\WebApi.AssemblyInfoInputs.cache
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\WebApi.AssemblyInfo.cs
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\WebApi.csproj.CoreCompileInputs.cache
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\WebApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\WebApi.exe
@@ -11,6 +16,7 @@ D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\MediatR.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -59,15 +65,11 @@ D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Application.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Domain.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Infrastructure.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Seguridad.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Application.pdb
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Seguridad.pdb
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Domain.pdb
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Infrastructure.pdb
-D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\WebApi.csprojAssemblyReference.cache
-D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\WebApi.AssemblyInfoInputs.cache
-D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\WebApi.AssemblyInfo.cs
-D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\WebApi.csproj.CoreCompileInputs.cache
-D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\WebApi.MvcApplicationPartsAssemblyInfo.cs
-D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\WebApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\staticwebassets\WebApi.StaticWebAssets.Manifest.cache
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\staticwebassets\WebApi.StaticWebAssets.xml
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebApi.styles.css

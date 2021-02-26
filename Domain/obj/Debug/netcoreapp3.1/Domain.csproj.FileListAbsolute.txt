@@ -1,6 +1,7 @@
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Domain\bin\Debug\netcoreapp3.1\Domain.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache

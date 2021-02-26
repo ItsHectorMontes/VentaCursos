@@ -1,6 +1,7 @@
 ﻿using Application.Cursos.Queries;
 using Domain.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -16,11 +17,10 @@ namespace WebApi.Controllers
     public class CursosController : MiControllerBase
     {       
 
-        [HttpGet]
+        [HttpGet]        
         public async Task<ActionResult<List<Curso>>> Get()
         {
             return await Mediator.Send(new Consulta.ListaCursos());
-
         }
 
         /// <summary>

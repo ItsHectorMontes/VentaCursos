@@ -1,22 +1,29 @@
 using Application.Cursos.Queries;
+using Application.Interfaces;
 using Domain.Identity;
 using FluentValidation.AspNetCore;
 using Infrastructure.Persistence;
 using MediatR;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
+using Seguridad.TokenSegurity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using WebApi.MiddleWare;
 
@@ -41,12 +48,35 @@ namespace WebApi
             });
             services.AddMediatR(typeof (Consulta.Manejador).Assembly);
             //agregando fluentvalidation configurando la validacion de nuevo curso.
-            services.AddControllers().AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<Nuevo>());
+            services.AddControllers(opt =>
+            {
+                //Authorizacion antes de recibir un request (antes de procesar)
+                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+                opt.Filters.Add(new AuthorizeFilter(policy));
+            })
+                .AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<Nuevo>());
+
             var builder = services.AddIdentityCore<Usuario>();
             var identityBuilder = new IdentityBuilder(builder.UserType, builder.Services);
             identityBuilder.AddEntityFrameworkStores<ApplicationDbContextSeed>();
             identityBuilder.AddSignInManager<SignInManager<Usuario>>();
             services.TryAddSingleton<ISystemClock, SystemClock>();
+            services.AddScoped<IJwtGenerador, JwtGenerador>();
+            //jwt
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Mi palabra Secreta"));
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
+            {
+                opt.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = key,
+                    ValidateAudience = false,
+                    ValidateIssuer = false
+                };
+            });
+            services.AddScoped<IUsuarioSesion, UsuarioSesion>();
+
+
 
             
 
@@ -60,6 +90,7 @@ namespace WebApi
             {
                 //app.UseDeveloperExceptionPage();
             }
+            app.UseAuthentication();
 
             app.UseRouting();
 

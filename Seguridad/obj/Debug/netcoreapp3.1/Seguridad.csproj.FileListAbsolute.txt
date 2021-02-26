@@ -1,0 +1,16 @@
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.csprojAssemblyReference.cache
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.AssemblyInfoInputs.cache
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.AssemblyInfo.cs
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.csproj.CoreCompileInputs.cache
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\bin\Debug\netcoreapp3.1\Seguridad.deps.json
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\bin\Debug\netcoreapp3.1\Seguridad.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\bin\Debug\netcoreapp3.1\Seguridad.pdb
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\bin\Debug\netcoreapp3.1\Application.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\bin\Debug\netcoreapp3.1\Domain.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\bin\Debug\netcoreapp3.1\Infrastructure.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\bin\Debug\netcoreapp3.1\Application.pdb
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.csproj.CopyComplete
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.pdb
