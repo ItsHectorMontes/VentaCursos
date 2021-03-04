@@ -18,6 +18,10 @@ namespace Application.Cursos.Queries
             public string Titulo { get; set; }
             public string Descripcion { get; set; }
             public DateTime? FechaPublicacion { get; set; }
+            
+            public List<Guid> ListaInstructor { get; set; }
+            public decimal Precio { get; set; }
+            public decimal Promocion { get; set; }
         }
         /// <summary>
         /// validacion using fluent validation
@@ -43,13 +47,40 @@ namespace Application.Cursos.Queries
 
             public async Task<Unit> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
+                Guid _cursoId = Guid.NewGuid();
                 var curso = new Curso
                 {
+                    CursoId = _cursoId,
                     Titulo = request.Titulo,
                     Descripcion = request.Descripcion,
                     FechaPublicacion = request.FechaPublicacion
                 };
                 _contextSeed.Curso.Add(curso);
+
+                if (request.ListaInstructor != null)
+                {
+                    foreach(var id in request.ListaInstructor)
+                    {
+                        var cursoInstructor = new CursoInstructor
+                        {
+                            CursoId = _cursoId,
+                            InstructorId = id
+                        };
+                        _contextSeed.CursoInstructor.Add(cursoInstructor);
+                    }
+                }
+                //agregar logica para insertar un precio del curso.
+
+                var precioEntidad = new Precio
+                {
+                    CursoId = _cursoId,
+                    PrecioActual = request.Precio,
+                    PrecioPromocion = request.Promocion,
+                    PrecioId = Guid.NewGuid()
+                };
+                _contextSeed.Precio.Add(precioEntidad);
+
+                //guardando en la BD (savechangesasync)
                 var valor = await _contextSeed.SaveChangesAsync();
                 if (valor>0)                
                     return Unit.Value;                

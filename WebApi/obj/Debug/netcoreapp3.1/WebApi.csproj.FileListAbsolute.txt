@@ -11,6 +11,8 @@ D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\WebApi.runtimeconfig.dev.json
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\WebApi.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\WebApi.pdb
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\AutoMapper.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\FluentValidation.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll

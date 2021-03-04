@@ -3,6 +3,7 @@ using Infrastructure.Persistence;
 using MediatR;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading;
@@ -14,7 +15,7 @@ namespace Application.Cursos.Queries
     {
         public class Ejecuta : IRequest
         {
-            public int Id { get; set; }
+            public Guid Id { get; set; }
         }
         public class Manejador : IRequestHandler<Ejecuta>
         {
@@ -27,6 +28,28 @@ namespace Application.Cursos.Queries
 
             public async Task<Unit> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
+                var instructoresDB = _contextSeed.CursoInstructor.Where(x => x.CursoId == request.Id);
+                foreach (var instructor in instructoresDB)
+                {
+                    _contextSeed.CursoInstructor.Remove(instructor);
+                }
+                //eliminar precio y comentarios
+                var comentariosDb = _contextSeed.Comentario.Where(x => x.CursoId == request.Id);
+                foreach (var cmt in comentariosDb)
+                {
+                    _contextSeed.Comentario.Remove(cmt);
+                }
+                var precioDB = _contextSeed.Precio.Where(x => x.CursoId == request.Id).FirstOrDefault();
+                if (precioDB!=null)
+                {
+                    _contextSeed.Precio.Remove(precioDB);
+                }
+
+
+
+
+
+
                 var curso =  await _contextSeed.Curso.FindAsync(request.Id);
                 if (curso == null)
                 {

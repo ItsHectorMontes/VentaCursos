@@ -1,7 +1,3 @@
-D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
-D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
-D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
-D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\bin\Debug\netcoreapp3.1\Application.deps.json
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\bin\Debug\netcoreapp3.1\Application.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\bin\Debug\netcoreapp3.1\Application.pdb
@@ -9,6 +5,10 @@ D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\bin\Debug\netcoreap
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\bin\Debug\netcoreapp3.1\Infrastructure.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\bin\Debug\netcoreapp3.1\Domain.pdb
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\obj\Debug\netcoreapp3.1\Application.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Application\obj\Debug\netcoreapp3.1\Application.pdb

@@ -1,7 +1,10 @@
-﻿using Application.ManejadorError.Exceptions;
+﻿using Application.Cursos.Queries.DtoCourse;
+using Application.ManejadorError.Exceptions;
+using AutoMapper;
 using Domain.Entities;
 using Infrastructure.Persistence;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -13,28 +16,38 @@ namespace Application.Cursos.Queries
 {
     public class ConsultaId
     {
-        public class CursoUnico : IRequest<Curso>
+        public class CursoUnico : IRequest<CursoDto>
         {
-            public int Id { get; set; }
+            public Guid Id { get; set; }
 
         }
-        public class Manejador : IRequestHandler<CursoUnico, Curso>
+        public class Manejador : IRequestHandler<CursoUnico, CursoDto>
 
         {
             private readonly ApplicationDbContextSeed _contextSeed;
-            public Manejador(ApplicationDbContextSeed contextSeed)
+            private readonly IMapper _mapper;
+            public Manejador(ApplicationDbContextSeed contextSeed, IMapper mapper)
             {
                 _contextSeed = contextSeed;
+                _mapper = mapper;
             }
 
-            public async Task<Curso> Handle(CursoUnico request, CancellationToken cancellationToken)
+            public async Task<CursoDto> Handle(CursoUnico request, CancellationToken cancellationToken)
             {
-                var curso = await _contextSeed.Curso.FindAsync(request.Id);
+                var curso = await _contextSeed.Curso
+                    .Include(x => x.ComentarioLista)
+                    .Include(x => x.PrecioPromocion)
+                    .Include(x => x.InstructoresLink)
+                    .ThenInclude(y => y.Instructor)
+                    .FirstOrDefaultAsync(a => a.CursoId == request.Id);
+                    
                 if (curso == null)
                 {
                     throw new ManejadorExcepcion(HttpStatusCode.NotFound, new { curso = "No se encontro el Curso" });
                 }
-                return curso;
+                var cursoDto = _mapper.Map<Curso, CursoDto>(curso);
+
+                return cursoDto;
             }
         }
     }

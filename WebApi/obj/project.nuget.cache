@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "j+l98h4fFwvUF4Vb9a6Lxe0j0Kmttm7nlsJz+62QnH7b1IvZXoW/jE3TEgwpJFXhdLVpsioCvd9szOzO3MPSOA==",
+  "dgSpecHash": "c1uPZG8k1Dit/rxGb6J/Z/6ooH7+zRBNkp7txD6ku3w3J3/f4uSZXe35dySZpDtsWtQI7Cc/TikBou5sHbFpfA==",
   "success": true,
   "projectFilePath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hector Franz\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
+    "C:\\Users\\Hector Franz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.1.1\\automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",
     "C:\\Users\\Hector Franz\\.nuget\\packages\\fluentvalidation\\8.6.3\\fluentvalidation.8.6.3.nupkg.sha512",
     "C:\\Users\\Hector Franz\\.nuget\\packages\\fluentvalidation.aspnetcore\\8.6.3\\fluentvalidation.aspnetcore.8.6.3.nupkg.sha512",
     "C:\\Users\\Hector Franz\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\8.6.3\\fluentvalidation.dependencyinjectionextensions.8.6.3.nupkg.sha512",

@@ -1,5 +1,6 @@
 using Application.Cursos.Queries;
 using Application.Interfaces;
+using AutoMapper;
 using Domain.Identity;
 using FluentValidation.AspNetCore;
 using Infrastructure.Persistence;
@@ -75,6 +76,8 @@ namespace WebApi
                 };
             });
             services.AddScoped<IUsuarioSesion, UsuarioSesion>();
+            //automapper
+            services.AddAutoMapper(typeof(Consulta.Manejador));
 
 
 

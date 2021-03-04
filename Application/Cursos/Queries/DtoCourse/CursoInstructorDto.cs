@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Domain.Entities
+namespace Application.Cursos.Queries.DtoCourse
 {
-    public class CursoInstructor
+    class CursoInstructorDto
     {
         public Guid CursoId { get; set; }
-        public Curso Curso { get; set; }
         public Guid InstructorId { get; set; }
-        public Instructor Instructor { get; set; }
     }
 }
