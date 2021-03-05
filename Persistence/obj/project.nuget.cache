@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZNgziGcHaX+39u+eVvQQGv/9Gvev0E39tZmnjMiWmeSDiimgL06nvqLu6vaVDtJAhJ7z9VLeX9QMQGZbN9LJKQ==",
+  "dgSpecHash": "fvVRdiseUeUxklWcsWj6A5wEOP7A1FMasiWn+7MLuKgl5EOydJXKUEyeohrZPqK7qYeVV7HwVZmGxLOXV3rqdA==",
   "success": true,
   "projectFilePath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Persistence\\Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hector Franz\\.nuget\\packages\\dapper\\2.0.4\\dapper.2.0.4.nupkg.sha512",
     "C:\\Users\\Hector Franz\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.12\\microsoft.aspnetcore.cryptography.internal.3.1.12.nupkg.sha512",
     "C:\\Users\\Hector Franz\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.12\\microsoft.aspnetcore.cryptography.keyderivation.3.1.12.nupkg.sha512",
     "C:\\Users\\Hector Franz\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.12\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.12.nupkg.sha512",

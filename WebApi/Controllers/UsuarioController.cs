@@ -31,5 +31,7 @@ namespace WebApi.Controllers
             return await Mediator.Send(new UsuarioActual.Ejecutar());
         }
 
+        
+
     }
 }

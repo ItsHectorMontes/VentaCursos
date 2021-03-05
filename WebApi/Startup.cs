@@ -3,6 +3,8 @@ using Application.Interfaces;
 using AutoMapper;
 using Domain.Identity;
 using FluentValidation.AspNetCore;
+using Infrastructure.DapperConexion;
+using Infrastructure.DapperConexion.Instructor;
 using Infrastructure.Persistence;
 using MediatR;
 using Microsoft.AspNetCore.Authentication;
@@ -47,6 +49,11 @@ namespace WebApi
             {
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+            services.AddOptions();
+
+            //dapper cnx
+            services.Configure<ConexionConfiguracion>(Configuration.GetSection("ConnectionStrings"));
+
             services.AddMediatR(typeof (Consulta.Manejador).Assembly);
             //agregando fluentvalidation configurando la validacion de nuevo curso.
             services.AddControllers(opt =>
@@ -78,6 +85,9 @@ namespace WebApi
             services.AddScoped<IUsuarioSesion, UsuarioSesion>();
             //automapper
             services.AddAutoMapper(typeof(Consulta.Manejador));
+            //iniciar sp
+            services.AddTransient<IFactoryConnection, FactoryConnection>();
+            services.AddScoped<IInstructor, InstructorRepositorio>();
 
 
 

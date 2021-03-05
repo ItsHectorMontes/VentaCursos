@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj": {}
+    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\webapi\\WebApi.csproj": {}
   },
   "projects": {
     "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Application\\Application.csproj": {
@@ -188,6 +188,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.12, )"
@@ -289,14 +293,14 @@
         }
       }
     },
-    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj": {
+    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\webapi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\webapi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj",
+        "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\webapi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\Hector Franz\\.nuget\\packages\\",
-        "outputPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\obj\\",
+        "outputPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
