@@ -6,4 +6,3 @@ D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Domain\obj\Debug\netcoreapp3.1\
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Domain\obj\Debug\netcoreapp3.1\Domain.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
-D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache

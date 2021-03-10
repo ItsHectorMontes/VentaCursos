@@ -1,6 +1,7 @@
 ﻿using Application.Cursos.Queries;
 using Application.Cursos.Queries.DtoCourse;
 using Domain.Entities;
+using Infrastructure.DapperConexion.Paginacion;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -62,5 +63,12 @@ namespace WebApi.Controllers
         {
             return await Mediator.Send(new Eliminar.Ejecuta { Id = id });
         }
+        //paginacion
+        [HttpPost("report")]
+        public async Task<ActionResult<PaginacionModel>> Report(PaginacionCurso.Ejecuta data)
+        {
+            return await Mediator.Send(data);
+        }
+
     }
 }

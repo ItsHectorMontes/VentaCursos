@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\webapi\\WebApi.csproj": {}
+    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
     "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\Application\\Application.csproj": {
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -141,7 +141,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -222,7 +222,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -289,18 +289,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\webapi\\WebApi.csproj": {
+    "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\webapi\\WebApi.csproj",
+        "projectUniqueName": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\webapi\\WebApi.csproj",
+        "projectPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\Hector Franz\\.nuget\\packages\\",
-        "outputPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\webapi\\obj\\",
+        "outputPath": "D:\\Desarrollo\\C#\\ProyectoVentaCursos\\VentaCursos\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -352,6 +352,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
             }
           },
           "imports": [
@@ -372,7 +376,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

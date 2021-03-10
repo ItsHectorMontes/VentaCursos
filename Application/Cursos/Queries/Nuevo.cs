@@ -53,7 +53,8 @@ namespace Application.Cursos.Queries
                     CursoId = _cursoId,
                     Titulo = request.Titulo,
                     Descripcion = request.Descripcion,
-                    FechaPublicacion = request.FechaPublicacion
+                    FechaPublicacion = request.FechaPublicacion,
+                    FechaCreacion = DateTime.UtcNow
                 };
                 _contextSeed.Curso.Add(curso);
 

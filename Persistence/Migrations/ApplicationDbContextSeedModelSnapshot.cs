@@ -34,6 +34,9 @@ namespace Infrastructure.Migrations
                     b.Property<Guid>("CursoId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<DateTime?>("FechaCreacion")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("Puntaje")
                         .HasColumnType("int");
 
@@ -52,6 +55,9 @@ namespace Infrastructure.Migrations
 
                     b.Property<string>("Descripcion")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("FechaCreacion")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("FechaPublicacion")
                         .HasColumnType("datetime2");
@@ -90,6 +96,9 @@ namespace Infrastructure.Migrations
 
                     b.Property<string>("Apellidos")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("FechaCreacion")
+                        .HasColumnType("datetime2");
 
                     b.Property<byte[]>("FotoPerfil")
                         .HasColumnType("varbinary(max)");
@@ -344,7 +353,7 @@ namespace Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Entities.Instructor", "Insctructor")
+                    b.HasOne("Domain.Entities.Instructor", "Instructor")
                         .WithMany("CursoLink")
                         .HasForeignKey("InstructorId")
                         .OnDelete(DeleteBehavior.Cascade)

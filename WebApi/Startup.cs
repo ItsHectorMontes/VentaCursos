@@ -5,6 +5,7 @@ using Domain.Identity;
 using FluentValidation.AspNetCore;
 using Infrastructure.DapperConexion;
 using Infrastructure.DapperConexion.Instructor;
+using Infrastructure.DapperConexion.Paginacion;
 using Infrastructure.Persistence;
 using MediatR;
 using Microsoft.AspNetCore.Authentication;
@@ -22,6 +23,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Seguridad.TokenSegurity;
 using System;
 using System.Collections.Generic;
@@ -42,7 +44,7 @@ namespace WebApi
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContextSeed>(opt =>
@@ -54,7 +56,7 @@ namespace WebApi
             //dapper cnx
             services.Configure<ConexionConfiguracion>(Configuration.GetSection("ConnectionStrings"));
 
-            services.AddMediatR(typeof (Consulta.Manejador).Assembly);
+            services.AddMediatR(typeof(Consulta.Manejador).Assembly);
             //agregando fluentvalidation configurando la validacion de nuevo curso.
             services.AddControllers(opt =>
             {
@@ -88,9 +90,18 @@ namespace WebApi
             //iniciar sp
             services.AddTransient<IFactoryConnection, FactoryConnection>();
             services.AddScoped<IInstructor, InstructorRepositorio>();
-
-
-
+            //instanciar IPaginacion
+            services.AddScoped<IPaginacion, PaginacionRepositorio>();
+            //swager
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Services para mantenimiento de cursos",
+                    Version = "v1"
+                });
+                c.CustomSchemaIds(c => c.FullName);
+            });   
             
 
         }
@@ -112,6 +123,13 @@ namespace WebApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            //swager
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "cursos online v1");
             });
         }
     }

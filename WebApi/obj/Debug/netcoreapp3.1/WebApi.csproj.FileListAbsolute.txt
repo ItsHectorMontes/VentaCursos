@@ -45,7 +45,11 @@ D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 D:\Desarrollo\C#\ProyectoVentaCursos\VentaCursos\WebApi\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
